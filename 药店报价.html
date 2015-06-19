@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>药店报价</title>
+    <LINK rel="stylesheet" href="css/common.css">
+	<link href="css/reset_css.css" type="text/css" rel="stylesheet" />
+	<link href="css/all.css" type="text/css" rel="stylesheet" />
+    <META name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+    <META name="apple-mobile-web-app-capable" content="yes">
+    <META name="apple-mobile-web-app-status-bar-style" content="black">
+    <META name="format-detection" content="telephone=no">
+    <SCRIPT src="js/jquery-1.9.1.min.js"></SCRIPT>
+    <SCRIPT src="js/load.js"></SCRIPT>
+</head>
+<body>
+
+		<section class="fix navbar22">
+        <A class="ico-fanhui" href="default.htm"><SPAN>返回首页</SPAN></A>
+        <H1 id="title" style="width:66%;">药店报价</H1>
+</section>
+<div class="clear"></div>
+<div id="YaoDianBaoJia">
+	<div class="topimg">
+    	<img src="images/testimg2.jpg" />
+    </div>
+    <div class="price">
+    	<h1>￥ 4.00</h1><span>已售532份</span>
+    </div>
+    <div class="borderBottom10"></div>
+    <div class="pingfen">
+    	<form action="" name="form_dp" method="post">
+        <div class="dp_boxc">
+            <input class="fl" type="checkbox" style="margin-top:2px; display:none;" name="InterviewCommentInfoSub[expAuth]" value="0" />
+            <div class="revinp">
+                    <span class="level">
+                        <i class="level_hollow" cjmark=""></i>
+                        <i class="level_hollow" cjmark=""></i>
+                        <i class="level_hollow" cjmark=""></i>
+                        <i class="level_hollow" cjmark=""></i>
+                        <i class="level_hollow" cjmark=""></i>
+                    </span>
+                    <span class="revgrade">良</span>
+            </div>
+        </div>
+        <div class="star_t"><em>5.0</em></div>
+        </form>
+        <span class="fr scored">825人评分</span>
+        <SCRIPT src="js/dp.js"></SCRIPT>
+    </div>
+    <div class="borderBottom1"></div>
+    <div class="pj_tb">
+        <a href="#" class="bg01">环境不错 222</a>
+        <a href="#" class="bg01">有导医 21</a>
+        <a href="#" class="bg01">服务到位 43</a>
+        <a href="#" class="bg01">设备先进 874</a>
+        <a href="#" class="bg02">味道不好 874</a>
+    </div>
+    <div class="Buy">
+    	<a href="#">我要订购</a>
+    </div>
+    <div class="borderBottom10"></div>
+    <div class="Content">
+    	<li>
+        	<h3>【批准文号】</h3>
+            <div class="fl" id="txt">
+            	国药准字Z12345097823
+            </div>
+        </li>
+       <li>
+        	<h3>【保质期】</h3>
+            <div class="fl" id="txt2">
+            	4个月
+            </div>
+        </li>
+        <li>
+        	<h3>【药品概述】</h3>
+            <div class="fl" id="txt3">
+           	清热解毒、凉血；用于温热发,  
+            </div>
+        </li>
+        <li>
+        	<h3>【参考价格】</h3>
+            <div class="fl" id="txt4">
+            	国药准字Z123450978
+            </div>
+        </li>
+        <li>
+        	<h3>【主要成分】</h3>
+            <div class="fl" id="txt5">
+            	国药准字Z123450978
+            </div>
+        </li>
+        <li>
+        	<h3>【功能主治】</h3>
+            <div class="fl" id="txt5">
+            	国药准字Z123450978
+            </div>
+        </li>
+        <li>
+        	<h3>【用法用量】</h3>
+            <div class="fl" id="txt5">
+            	国药准字Z123450978
+            </div>
+        </li>
+        <li>
+        	<h3>【包装规格】</h3>
+            <div class="fl" id="txt5">
+            	国药准字Z123450978
+            </div>
+        </li>
+        <li>
+        	<h3>【不良反应】</h3>
+            <div class="fl" id="txt5">
+            	国药准字Z123450978
+            </div>
+        </li>
+        <li>
+        	<h3>【注意事项】</h3>
+            <div class="fl" id="txt5">
+            	国药准字Z123450978
+            </div>
+        </li>
+        <li>
+        	<h3>【其他】</h3>
+            <div class="fl" id="txt5">
+            	国药准字Z123450978
+            </div>
+        </li>
+        <li>
+        	<h3>【禁忌】</h3>
+            <div class="fl" id="txt5">
+            	国药准字Z123450978
+            </div>
+        </li>
+        <script> 
+		function show(){ 
+		var box = document.getElementById("txt3"); 
+		var text = box.innerHTML; 
+		var newBox = document.createElement("span"); 
+		var btn = document.createElement("a"); 
+		newBox.innerHTML = text.substring(0,20); 
+		btn.innerHTML = text.length > 20 ? "...显示全部" : ""; 
+		btn.href = "###"; 
+		btn.onclick = function(){ 
+		if (btn.innerHTML == "...显示全部"){ 
+		btn.innerHTML = "收起"; 
+		newBox.innerHTML = text; 
+		}else{ 
+		btn.innerHTML = "...显示全部"; 
+		newBox.innerHTML = text.substring(0,20); 
+		} 
+		} 
+		box.innerHTML = ""; 
+		box.appendChild(newBox); 
+		box.appendChild(btn); 
+		} 
+		show(); 
+		</script>
+    </div>
+    <div class="remind">
+    	<div class="icon"><a href="#">吃药提醒<span>（免费下载）</span></a></div>
+        <div class="txt">专家温馨提示：按时吃药，有疗效！</div>
+    </div>
+    <div class="borderBottom10"></div>
+    <div class="myscore">
+    	<span class="fl myscored">我要评分</span>
+    	<form action="" name="form_dp" method="post">
+        <div class="dp_boxc">
+            <input class="fr" type="checkbox" style="margin-top:2px; display:none;" name="InterviewCommentInfoSub[expAuth]" value="0" />
+            <div class="revinp">
+                    <span class="level">
+                        <i class="level_hollow" cjmark=""></i>
+                        <i class="level_hollow" cjmark=""></i>
+                        <i class="level_hollow" cjmark=""></i>
+                        <i class="level_hollow" cjmark=""></i>
+                        <i class="level_hollow" cjmark=""></i>
+                    </span>
+                    <span class="revgrade">良</span>
+            </div>
+        </div>
+        <div class="star_t"><em>5.0</em></div>
+        </form>
+        <SCRIPT src="js/dp.js"></SCRIPT>
+    </div>
+    <div class="borderBottom10"></div>
+    <div class="shoplist">
+    	<div class="title">
+        	<h1>商家报价</h1>
+        </div>
+        <div class="borderBottom1"></div>
+        <ul>
+        	<li>
+            	<div class="name">
+                	<h2>北京祝你健康药店</h2><span><em>4.5元</em></span>
+                </div>
+                <div class="clear"></div>
+                <div class="fl img">
+                	<img src="images/testimg.jpg" />
+                </div>
+                <div class="fl txt">
+                	<ul>
+                    	<li><strong>距离：</strong>120KM</li>
+                        <li><strong>经营许可证：</strong>12345678号</li>
+                        <li><strong>电话：</strong>010-12345678</li>
+                        <li><strong>网址：</strong>www.zhuni.com</li>
+                        <li><form action="" name="form_dp" method="post" class="star">
+                            <div class="dp_boxc fr">
+                                <input class="fr" type="checkbox" style="margin-top:2px; display:none;" name="InterviewCommentInfoSub[expAuth]" value="0" />
+                                <div class="revinp">
+                                        <span class="level">
+                                            <i class="level_hollow" cjmark=""></i>
+                                            <i class="level_hollow" cjmark=""></i>
+                                            <i class="level_hollow" cjmark=""></i>
+                                            <i class="level_hollow" cjmark=""></i>
+                                            <i class="level_hollow" cjmark=""></i>
+                                        </span>
+                                        <span class="revgrade">良</span>
+                                </div>
+                            </div>
+                            <div class="star_t"><em>5.0</em></div>
+                            </form>
+                            <SCRIPT src="js/dp.js"></SCRIPT>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+                <div class="listBottom">
+                	<ul>
+                    	<li>医保</li>
+                        <li>24小时</li>
+                        <li>配送</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+            	<div class="name">
+                	<h2>北京祝你健康药店</h2><span><em>4.5元</em></span>
+                </div>
+                <div class="clear"></div>
+                <div class="fl img">
+                	<img src="images/testimg.jpg" />
+                </div>
+                <div class="fl txt">
+                	<ul>
+                    	<li><strong>距离：</strong>120KM</li>
+                        <li><strong>经营许可证：</strong>12345678号</li>
+                        <li><strong>电话：</strong>010-12345678</li>
+                        <li><strong>网址：</strong>www.zhuni.com</li>
+                        <li><form action="" name="form_dp" method="post" class="star">
+                            <div class="dp_boxc fr">
+                                <input class="fr" type="checkbox" style="margin-top:2px; display:none;" name="InterviewCommentInfoSub[expAuth]" value="0" />
+                                <div class="revinp">
+                                        <span class="level">
+                                            <i class="level_hollow" cjmark=""></i>
+                                            <i class="level_hollow" cjmark=""></i>
+                                            <i class="level_hollow" cjmark=""></i>
+                                            <i class="level_hollow" cjmark=""></i>
+                                            <i class="level_hollow" cjmark=""></i>
+                                        </span>
+                                        <span class="revgrade">良</span>
+                                </div>
+                            </div>
+                            <div class="star_t"><em>5.0</em></div>
+                            </form>
+                            <SCRIPT src="js/dp.js"></SCRIPT>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+                <div class="listBottom">
+                	<ul>
+                    	<li>医保</li>
+                        <li>24小时</li>
+                        <li>配送</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+            	<div class="name">
+                	<h2>北京祝你健康药店</h2><span><em>4.5元</em></span>
+                </div>
+                <div class="clear"></div>
+                <div class="fl img">
+                	<img src="images/testimg.jpg" />
+                </div>
+                <div class="fl txt">
+                	<ul>
+                    	<li><strong>距离：</strong>120KM</li>
+                        <li><strong>经营许可证：</strong>12345678号</li>
+                        <li><strong>电话：</strong>010-12345678</li>
+                        <li><strong>网址：</strong>www.zhuni.com</li>
+                        <li><form action="" name="form_dp" method="post" class="star">
+                            <div class="dp_boxc fr">
+                                <input class="fr" type="checkbox" style="margin-top:2px; display:none;" name="InterviewCommentInfoSub[expAuth]" value="0" />
+                                <div class="revinp">
+                                        <span class="level">
+                                            <i class="level_hollow" cjmark=""></i>
+                                            <i class="level_hollow" cjmark=""></i>
+                                            <i class="level_hollow" cjmark=""></i>
+                                            <i class="level_hollow" cjmark=""></i>
+                                            <i class="level_hollow" cjmark=""></i>
+                                        </span>
+                                        <span class="revgrade">良</span>
+                                </div>
+                            </div>
+                            <div class="star_t"><em>5.0</em></div>
+                            </form>
+                            <SCRIPT src="js/dp.js"></SCRIPT>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+                <div class="listBottom">
+                	<ul>
+                    	<li>医保</li>
+                        <li>24小时</li>
+                        <li>配送</li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+	<!-- YaoDianBaoJia结束 -->
+    
+        
+     <footer class="footer">
+        <menu class="footer-con">
+            <UL class="fix">
+                <LI class="zx"><A href="#">首页</A></LI>
+                <LI class="tel"><A href="#">微整容</A></LI>
+                <LI class="yy"><A href="#">发现</A></LI>
+                <LI class="dh"><A href="#">保健篮</A></LI>
+                <LI class="dq"><A href="#">我的健康本</A></LI>
+            </UL>
+        </menu>
+    </footer>
+    
+    <SCRIPT src="js/foot.js"></SCRIPT>
+
+</body>
+</html>
