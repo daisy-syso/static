@@ -11,7 +11,7 @@
     <META name="apple-mobile-web-app-status-bar-style" content="black">
     <META name="format-detection" content="telephone=no">
     <SCRIPT src="js/jquery-1.9.1.min.js"></SCRIPT>
-    <SCRIPT src="js/load.js"></SCRIPT>
+    
 </head>
 <body>
 
@@ -20,6 +20,26 @@
         <H1 id="title" style="width:66%;">胃溃疡</H1>
 </section>
         
+        <script type="text/javascript">
+        $(document).ready(function(){
+    /*病状点击*/
+    $("#BingZhuang ul li").click(function(){
+        
+        if ($(this).is(".change"))
+        {
+            $(this).removeClass("change")
+            $(this).find(".box").slideUp(300)   
+            return false;
+        }
+        $("#BingZhuang").find(".box").slideUp(0);
+        $(this).parent().find("li.change").removeClass("change")
+        $(this).addClass("change")
+        
+        $(this).find(".box").slideDown(300) 
+        
+    })
+})
+        </script>
         
 <div id="XiangGuan">
 	<ul>

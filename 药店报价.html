@@ -12,6 +12,7 @@
     <META name="format-detection" content="telephone=no">
     <SCRIPT src="js/jquery-1.9.1.min.js"></SCRIPT>
     <SCRIPT src="js/load.js"></SCRIPT>
+    
 </head>
 <body>
 
@@ -133,31 +134,8 @@
             	国药准字Z123450978
             </div>
         </li>
-        <script> 
-		function show(){ 
-		var box = document.getElementById("txt3"); 
-		var text = box.innerHTML; 
-		var newBox = document.createElement("span"); 
-		var btn = document.createElement("a"); 
-		newBox.innerHTML = text.substring(0,20); 
-		btn.innerHTML = text.length > 20 ? "...显示全部" : ""; 
-		btn.href = "###"; 
-		btn.onclick = function(){ 
-		if (btn.innerHTML == "...显示全部"){ 
-		btn.innerHTML = "收起"; 
-		newBox.innerHTML = text; 
-		}else{ 
-		btn.innerHTML = "...显示全部"; 
-		newBox.innerHTML = text.substring(0,20); 
-		} 
-		} 
-		box.innerHTML = ""; 
-		box.appendChild(newBox); 
-		box.appendChild(btn); 
-		} 
-		show(); 
-		</script>
     </div>
+    <script src="js/show.js" type="text/jscript"></script>
     <div class="remind">
     	<div class="icon"><a href="#">吃药提醒<span>（免费下载）</span></a></div>
         <div class="txt">专家温馨提示：按时吃药，有疗效！</div>
@@ -191,49 +169,6 @@
         <div class="borderBottom1"></div>
         <ul>
         	<li>
-            	<div class="name">
-                	<h2>北京祝你健康药店</h2><span><em>4.5元</em></span>
-                </div>
-                <div class="clear"></div>
-                <div class="fl img">
-                	<img src="images/testimg.jpg" />
-                </div>
-                <div class="fl txt">
-                	<ul>
-                    	<li><strong>距离：</strong>120KM</li>
-                        <li><strong>经营许可证：</strong>12345678号</li>
-                        <li><strong>电话：</strong>010-12345678</li>
-                        <li><strong>网址：</strong>www.zhuni.com</li>
-                        <li><form action="" name="form_dp" method="post" class="star">
-                            <div class="dp_boxc fr">
-                                <input class="fr" type="checkbox" style="margin-top:2px; display:none;" name="InterviewCommentInfoSub[expAuth]" value="0" />
-                                <div class="revinp">
-                                        <span class="level">
-                                            <i class="level_hollow" cjmark=""></i>
-                                            <i class="level_hollow" cjmark=""></i>
-                                            <i class="level_hollow" cjmark=""></i>
-                                            <i class="level_hollow" cjmark=""></i>
-                                            <i class="level_hollow" cjmark=""></i>
-                                        </span>
-                                        <span class="revgrade">良</span>
-                                </div>
-                            </div>
-                            <div class="star_t"><em>5.0</em></div>
-                            </form>
-                            <SCRIPT src="js/dp.js"></SCRIPT>
-                        </li>
-                    </ul>
-                </div>
-                <div class="clear"></div>
-                <div class="listBottom">
-                	<ul>
-                    	<li>医保</li>
-                        <li>24小时</li>
-                        <li>配送</li>
-                    </ul>
-                </div>
-            </li>
-            <li>
             	<div class="name">
                 	<h2>北京祝你健康药店</h2><span><em>4.5元</em></span>
                 </div>
